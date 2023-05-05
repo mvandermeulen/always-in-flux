@@ -14,15 +14,15 @@ spec:
         kind: HelmRepository
         name: metallb
         namespace: flux-system
-  maxHistory: 3
+  maxHistory: 9
   install:
     createNamespace: true
     remediation:
-      retries: 3
+      retries: 9
   upgrade:
     cleanupOnFail: true
     remediation:
-      retries: 3
+      retries: 9
   uninstall:
     keepHistory: false
   values:
